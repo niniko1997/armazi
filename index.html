@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="html_class">
+	<head>
+  		<title>Armazi</title>
+  		<meta charset="UTF-8" />
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+
+  		<!-- links to Bootstrap style sheet -->
+  		<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+  		<!-- link to personal style sheet -->
+  		<link rel='stylesheet' type='text/css' href='style.css'/>
+  		<link rel="stylesheet" type="text/css" href="normalize.css" />
+  		<link rel="stylesheet" type="text/css" href="revealer.css" />
+
+  		<!-- javascript -->
+  		<script>document.documentElement.className = 'js';</script>
+	</head>
+
+	<body class="body_class">
+		<main>
+			<section class="content_intro">
+				<h2 class="content__title content__title--center">
+					<div id="rev-1" class="content__title__inner">Documentary</div><br/>
+					<div id="rev-2" class="content__title__inner content__title__inner--offset-1">Club</div>
+				</h2>
+				<header class="codrops-header">
+
+					<h1 class="codrops-header__title">Understanding the World through the Stories of Others</h1>
+					<nav class="demos">
+						<a class="demo demo--current" href="index2.html">Home</a>
+						<a class="demo" href="aboutUs.html">About Us</a>
+						<a class="demo" href="events.html">Events</a>
+						<a class="demo" href="contact.html">Contact</a>
+					</nav>
+
+				</header>
+
+			</section>
+		</main>
+
+        <script src="anime.min.js"></script>
+		<script src="main.js"></script>
+		<script>
+		(function() {
+			// Fake loading.
+			setTimeout(init, 1500);
+
+			function init() {
+				document.body.classList.remove('loading');
+
+				//************************ Example 1 - reveal on load ********************************
+				
+				var rev1 = new RevealFx(document.querySelector('#rev-1'), {
+					revealSettings : {
+						bgcolor: 'rgba(192,192,192, 0.9)',
+						onCover: function(contentEl, revealerEl) {
+							contentEl.style.opacity = 1;
+						}
+					}
+				});
+				rev1.reveal();
+
+				var rev2 = new RevealFx(document.querySelector('#rev-2'), {
+					revealSettings : {
+						bgcolor: 'rgba(178,7,7, 1)',
+						delay: 300,
+						onCover: function(contentEl, revealerEl) {
+							contentEl.style.opacity = 0.3;
+						}
+					}
+				});
+				rev2.reveal();
+			}
+		})();
+		</script>
+	</body>
+</html>

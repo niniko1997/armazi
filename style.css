@@ -1,0 +1,155 @@
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background: black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.codrops-header {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	padding: 5vw;
+	pointer-events: none;
+}
+
+.codrops-header__title {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.demos {
+	flex: none;
+	width: 100%;
+	padding: 0.75em 0 0 0;
+}
+
+.demo {
+	font-weight: bold;
+	margin: 0 7em 0.5em 0.1em;
+	pointer-events: visible;
+	color: #A9A9A9;
+}
+
+.demo--current {
+	color: #C0C0C0;
+}
+
+.content__title {
+    font-weight: bold;
+	font-size: 8.0vw;
+	line-height: 1.2;
+	padding: 0 5vw;
+}
+
+.content__title--center {
+	margin: auto;
+}
+
+.content__title__inner {
+
+	flex: none;
+	display: inline-block;
+	white-space: nowrap;
+	position: relative;
+}
+
+.content__title__inner--offset-1 {
+	line-height: -0.25;
+	left: 36.0vw;
+}
+
+.content--full {
+	height: 100vh;
+	min-height: 600px;
+}
+
+.flexy {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content {
+	position: relative;
+	min-height: 300px;
+}
+
+.content.intro {
+	height: 93vh;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+/* Page Loader */
+.js .loading::before {
+	content: '';
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: black;
+}
+
+.js .loading::after {
+	content: url("movieReel.png");
+	position: fixed;
+	z-index: 10000;
+	top: 50%;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	margin: -25px 0 0 -25px;
+	pointer-events: none;
+	background: #000;
+	animation: loaderAnim 0.8s ease-out infinite alternate forwards;
+}
+
+@keyframes loaderAnim {
+	to {
+		transform: translate3d(0,-100px,0);
+	}
+}
+
+@media screen and (max-width: 50em) {
+	.codrops-header__title,
+	.codrops-header__tagline {
+		width: 100%;
+		padding: 1em 0 0;
+	}
+	.demo {
+		font-size: 1em;
+		margin: 0.5em 1em 0.25em 0;
+	}
+	.content--full {
+		min-height: 0;
+	}
+	.content__title {
+		font-size: 4em;
+	}
+}
+
+@media screen and (max-width: 20em){
+	.content__title {
+		font-size: 2em;
+	}
+}
