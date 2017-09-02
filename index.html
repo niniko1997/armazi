@@ -2,6 +2,7 @@
 <html lang="en-US">
 	<head>
   		<!-- scripts -->
+  		<script>document.documentElement.className = 'js';</script>
 
   		<!-- if user has scripts disabled -->
 		<noscript><meta http-equiv="refresh" content="0; URL=/?nojsmode=1" /></noscript>
@@ -20,7 +21,7 @@
   		<meta property="og:site_name" content="Armazi" />
   		<meta property="og:title" content="Document Sharing | Armazi" />
   		<meta property="og:description" content="Armazi is a Document Sharing platform that allows for Document Sharing, secure and reliable signing and management." />
-<meta property="og:image" content="https://a.slack-edge.com/436da/marketing/img/meta/slack_hash_128.png" />
+  		<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Armazian_alphabet_Shin_%28Armazi%29.svg/931px-Armazian_alphabet_Shin_%28Armazi%29.svg.png" />
 
   		
   		<!-- style sheets -->
@@ -33,66 +34,46 @@
   		<link rel="stylesheet" type="text/css" href="normalize.css" />
   		<link rel="stylesheet" type="text/css" href="revealer.css" />
 
-  		<!-- javascript -->
-  		<script>document.documentElement.className = 'js';</script>
-	</head>
+  	</head>
 
-	<body class="body_class">
-		<main>
-			<section class="content_intro">
-				<h2 class="content__title content__title--center">
-					<div id="rev-1" class="content__title__inner">Documentary</div><br/>
-					<div id="rev-2" class="content__title__inner content__title__inner--offset-1">Club</div>
-				</h2>
-				<header class="codrops-header">
+	<body class="">
+		<header role="banner">
+			<nav class="c-nav c-nav--primary" role="navigation" aria-label="Primary Navigation">
+				<div class="c-nav__row o-content-container">
+					<div class="c-slacklogo">
+						<a data-clog-click data-clog-ui-element="link_home" data-clog-ui-step="inc_header_nav" class="c-slacklogo--white" href="index.html" aria-label="Armazi" data-qa="logo">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Armazian_alphabet_Shin_%28Armazi%29.svg/931px-Armazian_alphabet_Shin_%28Armazi%29.svg.png" alt="Armazi"/>
+						</a>
+					</div>
 
-					<h1 class="codrops-header__title">Understanding the World through the Stories of Others</h1>
-					<nav class="demos">
-						<a class="demo demo--current" href="index2.html">Home</a>
-						<a class="demo" href="aboutUs.html">About Us</a>
-						<a class="demo" href="events.html">Events</a>
-						<a class="demo" href="contact.html">Contact</a>
-					</nav>
+					<ul class="c-nav__list">
+						<li class="c-nav--primary__listitem v--desktop"><a data-clog-click data-clog-ui-element="link_features" data-clog-ui-step="inc_header_nav" href="why.html" data-qa="why_armazi">Why Armazi?</a></li>
+						<li class="c-nav--primary__listitem v--desktop"><a data-clog-click data-clog-ui-element="link_about_us" data-clog-ui-step="inc_header_nav" href="about.html" data-qa="about_us">About Us</a></li>
+					</ul>
+					
+					<!-- when screen is small, displau ul buttom -->
+					<button id="nav_menu_btn" aria-label="Menu" class="c-nav__icon v--menu u-border-radius--none" data-clog-click data-clog-ui-element="btn_menu" data-clog-ui-step="inc_header_nav">
+					<img src="https://a.slack-edge.com/a425/marketing/img/icons/icon_menu.svg"/ alt="">
+					</button>
 
-				</header>
+				</div>
+			</nav>
+		
 
-			</section>
-		</main>
+			<!-- mobile friendly version -->
+			<nav id="main_nav" class="c-nav__mobile v--primary is-hidden" role="navigation" aria-label="Primary Navigation">
+				<div class="c-nav__toolbar v--top">
+					<a href="https://slack.com/" data-clog-click data-clog-ui-element="link_home" data-clog-ui-step="inc_mobile_nav"><img class="c-slacklogo t-white" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Armazian_alphabet_Shin_%28Armazi%29.svg/931px-Armazian_alphabet_Shin_%28Armazi%29.svg.png" width="31" alt="Armazi" /></a>
+					<button id="nav_close_btn" class="c-nav__icon v--close" data-clog-click data-clog-ui-element="btn_close" data-clog-ui-step="inc_mobile_nav">
+					<img src="https://a.slack-edge.com/5ced7/marketing/img/icons/icon_close.svg"  width="24" alt="Close Navigation"/>
+					</button>
+				</div>
 
-        <script src="anime.min.js"></script>
-		<script src="main.js"></script>
-		<script>
-		(function() {
-			// Fake loading.
-			setTimeout(init, 1500);
-
-			function init() {
-				document.body.classList.remove('loading');
-
-				//************************ Example 1 - reveal on load ********************************
-				
-				var rev1 = new RevealFx(document.querySelector('#rev-1'), {
-					revealSettings : {
-						bgcolor: 'rgba(192,192,192, 0.9)',
-						onCover: function(contentEl, revealerEl) {
-							contentEl.style.opacity = 1;
-						}
-					}
-				});
-				rev1.reveal();
-
-				var rev2 = new RevealFx(document.querySelector('#rev-2'), {
-					revealSettings : {
-						bgcolor: 'rgba(178,7,7, 1)',
-						delay: 300,
-						onCover: function(contentEl, revealerEl) {
-							contentEl.style.opacity = 0.3;
-						}
-					}
-				});
-				rev2.reveal();
-			}
-		})();
-		</script>
+				<ul class="c-nav__list v--main">
+					<li class="c-nav--primary__listitem"><a href="why.html" data-clog-click data-clog-ui-element="link_features" data-clog-ui-step="inc_mobile_nav">Why Armazi?</a></li>
+					<li class="c-nav--primary__listitem"><a href="about.html" data-clog-click data-clog-ui-element="link_about" data-clog-ui-step="inc_mobile_nav">About Us</a></li>
+				</ul>
+			</nav>
+		</header>
 	</body>
 </html>
