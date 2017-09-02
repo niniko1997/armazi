@@ -33,6 +33,8 @@
   		<link rel='stylesheet' type='text/css' href='style.css'/>
   		<link rel="stylesheet" type="text/css" href="normalize.css" />
   		<link rel="stylesheet" type="text/css" href="revealer.css" />
+  		<link href="rollup-marketing.css" rel="stylesheet" type="text/css">
+		<link href="page_index.css" rel="stylesheet" type="text/css">
 
   	</head>
 
@@ -41,12 +43,13 @@
 			<nav class="c-nav c-nav--primary" role="navigation" aria-label="Primary Navigation">
 				<div class="c-nav__row o-content-container">
 					<div class="c-slacklogo">
-						<a data-clog-click data-clog-ui-element="link_home" data-clog-ui-step="inc_header_nav" class="c-slacklogo--white" href="index.html" aria-label="Armazi" data-qa="logo">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Armazian_alphabet_Shin_%28Armazi%29.svg/931px-Armazian_alphabet_Shin_%28Armazi%29.svg.png" alt="Armazi"/>
+						<a data-clog-click data-clog-ui-element="link_home" data-clog-ui-step="inc_header_nav" class="c-slacklogo--white" href="index.html" aria-label="Armazi" data-qa="logo" width="125">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Armazian_alphabet_Shin_%28Armazi%29.svg/931px-Armazian_alphabet_Shin_%28Armazi%29.svg.png" alt="Armazi" width="75" />
 						</a>
 					</div>
 
 					<ul class="c-nav__list">
+						<li class="c-nav--primary__listitem v--desktop"><a data-clog-click data-clog-ui-element="link_features" data-clog-ui-step="inc_header_nav" href="why.html" data-qa="why_armazi"><h3>Armazi</h3></a></li> 
 						<li class="c-nav--primary__listitem v--desktop"><a data-clog-click data-clog-ui-element="link_features" data-clog-ui-step="inc_header_nav" href="why.html" data-qa="why_armazi">Why Armazi?</a></li>
 						<li class="c-nav--primary__listitem v--desktop"><a data-clog-click data-clog-ui-element="link_about_us" data-clog-ui-step="inc_header_nav" href="about.html" data-qa="about_us">About Us</a></li>
 					</ul>
@@ -75,5 +78,71 @@
 				</ul>
 			</nav>
 		</header>
+
+		<main id="main" role="main">
+			<section class="o-hero page-home">
+				<div class="o-hero__content o-content-container o-two-columns v--inverse">
+					<header class="o-hero__header">
+						<h1 class="o-hero__header__headline">Keep your Business Momentum.</h1>
+						<p class="o-hero__header__copy u-margin-left--flush">When your team needs to fill out forms, share information, review a contract, finalize invoices, and more, we've got you covered. Move your business forward efficiently and securely</p>
+						
+						<div class="o-hero__header__cta c-cta c-cta--signup">
+
+							<a href="/sign_up.html"
+	 						class="c-button v--left v--primary"
+	 						data-gtm-click="SignUp"
+	 						data-clog-ui-element="link_get_started"
+	 						data-clog-ui-step="page_home"
+	  						data-clog-click>Get started</a>
+
+	  						<a href="/sign_in.html"
+	  						class="c-button v--left v--primary"
+							data-clog-click
+							data-clog-ui-element="link_sign_in_cta"
+							data-clog-ui-step="page_home"
+							data-gtm-click="optout_signin">Sign in</a> 
+ 						</div>
+					</header>
+
+					<div class="o-hero__illustration bg-home">
+						<img src='https://a.slack-edge.com/52353/marketing/img/home/home_illo.png' srcset='https://a.slack-edge.com/52353/marketing/img/home/home_illo.png 1x, https://a.slack-edge.com/52353/marketing/img/home/home_illo@2x.png 2x' alt="" >
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<foote> 
+			<div class="c-nav--footer__metasocial" role="contentinfo">
+				<div class="o-content-container">
+					<ul class="c-nav__list">
+						<li class="c-nav--footer__listitem--meta"><a data-clog-click data-clog-ui-step="inc_footer_nav" data-clog-ui-element="link_status" href="https://status.slack.com" target="_blank" data-qa="status">Status</a></li>
+						<li class="c-nav--footer__listitem--meta"><a data-clog-click data-clog-ui-step="inc_footer_nav" data-clog-ui-element="link_legal" href="https://slack.com/legal" data-qa="privacy_terms">Privacy &amp; Terms</a></li>
+						<li class="c-nav--footer__listitem--meta"><a data-clog-click data-clog-ui-step="inc_footer_nav" data-clog-ui-element="link_help_contact" href="https://slack.com/help/contact" data-qa="contact">Contact Us</a></li>
+					</ul>
+			
+					<ul class="c-nav__list">
+						<li class="c-nav--footer__listitem--social">
+						<a data-clog-click data-clog-ui-step="inc_footer_nav" data-clog-ui-element="link_social_twitter" target="_blank" href="https://twitter.com/slackhq" data-qa="twitter">
+						<img class="c-nav--footer__svgicon" src="https://a.slack-edge.com/a425/marketing/img/icons/icon_social_twitter.svg" width="20" height="20" aria-label="Twitter" />
+						</a>
+						</li>
+						<li class="c-nav--footer__listitem--social">
+						<a data-clog-click data-clog-ui-step="inc_footer_nav" data-clog-ui-element="link_social_facebook" target="_blank" href="https://facebook.com/slackhq" data-qa="facebook">
+						<img class="c-nav--footer__svgicon" src="https://a.slack-edge.com/abd87/marketing/img/icons/icon_social_facebook.svg" width="22" height="22" aria-label="Facebook" />
+						</a>
+						</li>
+						<li class="c-nav--footer__listitem--social">
+						<a data-clog-click data-clog-ui-step="inc_footer_nav"  data-clog-ui-element="link_link_social_youtube" target="_blank" href="https://www.youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw" data-qa="youtube">
+						<img class="c-nav--footer__svgicon" src="https://a.slack-edge.com/a425/marketing/img/icons/icon_social_youtube.svg" width="20" height="20" aria-label="YouTube" />
+						</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</foote>
+
+
+
 	</body>
 </html>
