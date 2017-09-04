@@ -4,98 +4,23 @@ html{
 	color:#323648
 }
 
-.o-hero{
-	padding-top:7rem;
-	padding-bottom:3rem
+.sec_bridge__header{
+	color:#393939;
 }
 
-@media screen and (min-width:48rem){
-	.o-hero{
-		padding-top:10rem;
-		padding-bottom:5rem
-	}
-}
-
-.o-hero.v--short{
-	padding-bottom:3rem;
-	padding-top:3rem
-}
-
-.o-hero,.o-hero--screen,.o-hero--slideshow{
-	position:relative
-}
-
-.o-hero--screen__content,.o-hero--slideshow__content,.o-hero__content{
-	margin:0 auto;
-	position:relative
-}
-
-.o-hero--screen__content:not(.body-container),.o-hero--slideshow__content:not(.body-container),.o-hero__content:not(.body-container){
-	margin:0 auto;
-	padding:0 8vw
-}
-
-@media screen and (min-width:48rem){
-	.o-hero--screen__content:not(.body-container),.o-hero--slideshow__content:not(.body-container),.o-hero__content:not(.body-container){
-		padding:0 4vw
-	}
-}
-
-@media screen and (min-width:84.875rem){
-	.o-hero--screen__content:not(.body-container),.o-hero--slideshow__content:not(.body-container),.o-hero__content:not(.body-container){
-		padding:0
-	}
-}
-
-.o-hero--screen.v--light-text .o-hero__header,.o-hero--slideshow.v--light-text .o-hero__header,.o-hero.v--light-text .o-hero__header{
-	color:#F5F5F5;
-	text-shadow:0 0 1px rgba(0,0,0,.1)
-}
-
-.o-hero--screen.v--light-text .o-hero__header__copy,.o-hero--slideshow.v--light-text .o-hero__header__copy,.o-hero.v--light-text .o-hero__header__copy{
-	color:#FFF
-}
-
-.o-hero--screen.v--light-text .o-hero__background,.o-hero--slideshow.v--light-text .o-hero__background,.o-hero.v--light-text .o-hero__background{
-	background-color:#323648
-}
-
-.o-hero__illustration{
-	margin-top:3rem
-}
-
-.o-hero--screen{
-	position:relative
-}
-
-.o-hero--screen:before{
-	display:block;
-	position:absolute;
-	content:"";
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
-	z-index:0
-}
-
-.o-hero__header{
-	color:#323648
-}
-
-.o-hero__header__preheadline{
-	font-family:Slack-Averta,appleLogo,sans-serif;
+.sec_bridge__header__preheadline{
+	font-family:'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;;
 	font-weight:400;
 	line-height:1.2;
 	font-size:1.15rem
 }
 
-[lang=ja-JP] .o-hero__header__preheadline{
-	font-family:Slack-Noto,Slack-Averta,appleLogo,sans-serif
+[lang=ja-JP] .sec_bridge__header__preheadline{
+	font-family: 'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;
 }
 
 @media screen and (min-width:25rem){
-	.o-hero__header__preheadline{
+	.sec_bridge__header__preheadline{
 		font-size:calc(1.15rem + (-.3999999999999986 * (100vw - 400px)/ 624))
 	}
 }
@@ -104,84 +29,85 @@ html{
 	hr.v--responsive{
 		width:inherit
 	}
-	.o-hero__header__preheadline{
+	.sec_bridge__header__preheadline{
 		font-size:1.125rem
 	}
 }
 
-.o-hero__header__headline{
-	font-family:Slack-Tiempos,"Times New Roman",Georgia,serif;
-	font-weight:500;
+.sec_bridge__header__headline{
+	font-family:'Arimo', 'Nurito', 'PT Sans Caption', serif;
+	font-weight:900;
 	line-height:1.1;
-	font-size:2rem;
-	margin-bottom:1rem
+	font-size:3.0rem;
+	margin-bottom:1rem;
+	padding-top: 2rem;
 }
 
-[lang=ja-JP] .o-hero__header__headline{
-	font-family:Slack-Noto,Slack-Averta,appleLogo,sans-serif
+[lang=ja-JP] .sec_bridge__header__headline{
+	font-family: 'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;
 }
 
 @media screen and (min-width:25rem){
-	.o-hero__header__headline{
-		font-size:calc(2rem + (12 * (100vw - 400px)/ 624))
+	.sec_bridge__header__headline{
+		font-size:calc(3.0rem + (12 * (100vw - 400px)/ 624))
 	}
 }
 
 @media screen and (min-width:64rem){
-	.o-hero__header__headline{
-		font-size:2.75rem
+	.sec_bridge__header__headline{
+		font-size:3.0rem
 	}
 }
 
-.o-hero__header__headline--larger{
+.sec_bridge__header__headline--larger{
 	font-family:Slack-Tiempos,"Times New Roman",Georgia,serif;
-	font-weight:500;
+	font-weight:900;
 	line-height:1.1;
-	font-size:2rem;
+	font-size:3.0rem;
 	margin-bottom:1rem
 }
 
-[lang=ja-JP] .o-hero__header__headline--larger{
-	font-family:Slack-Noto,Slack-Averta,appleLogo,sans-serif
+[lang=ja-JP] .sec_bridge__header__headline--larger{
+	font-family:    'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;
 }
 
 @media screen and (min-width:25rem){
-	.o-hero__header__headline--larger{
+	.sec_bridge__header__headline--larger{
 		font-size:calc(2rem + (24 * (100vw - 400px)/ 624))
 	}
 }
 
 @media screen and (min-width:64rem){
-	.o-hero__header__headline--larger{
+	.sec_bridge__header__headline--larger{
 		font-size:3.5rem
 	}
 }
 
-.o-hero__header__copy{
-	font-family:Slack-Averta,appleLogo,sans-serif;
+.sec_bridge__header__copy{
+	font-family:   'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;;
 	font-weight:400;
 	line-height:1.5;
 	font-size:1.0625rem
 }
 
-[lang=ja-JP] .o-hero__header__copy{
-	font-family:Slack-Noto,Slack-Averta,appleLogo,sans-serif
+[lang=ja-JP] .sec_bridge__header__copy{
+	font-family:    'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;
 }
 
 @media screen and (min-width:25rem){
-	.o-hero__header__copy{
+	.sec_bridge__header__copy{
 		font-size:calc(1.0625rem + (3 * (100vw - 400px)/ 624))
 	}
 }
 
 @media screen and (min-width:64rem){
-	.o-hero__header__copy{
+	.sec_bridge__header__copy{
 		font-size:1.25rem
 	}
 }
 
-.o-hero__header__link{
-	font-family:Slack-Averta,appleLogo,sans-serif;
+.sec_bridge__header__link{
+	font-family:   'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;;
 	font-weight:400;
 	font-size:1.15rem;
 	margin-bottom:1rem;
@@ -189,17 +115,17 @@ html{
 	position:relative
 }
 
-[lang=ja-JP] .o-hero__header__link{
-	font-family:Slack-Noto,Slack-Averta,appleLogo,sans-serif
+[lang=ja-JP] .sec_bridge__header__link{
+	font-family:    'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;
 }
 
 @media screen and (min-width:25rem){
-	.o-hero__header__link{
+	.sec_bridge__header__link{
 		font-size:calc(1.15rem + (1.6000000000000014 * (100vw - 400px)/ 624))
 	}
 }
 
-.o-hero__header__link::before{
+.sec_bridge__header__link::before{
 	transition:width 420ms cubic-bezier(.165,.84,.44,1);
 	position:absolute;
 	bottom:-2px;
@@ -208,39 +134,39 @@ html{
 	content:""
 }
 
-.o-hero__header__link:focus,.o-hero__header__link:hover{
+.sec_bridge__header__link:focus,.sec_bridge__header__link:hover{
 	cursor:pointer
 }
 
-.o-hero__header__link:focus::before,.o-hero__header__link:hover::before{
+.sec_bridge__header__link:focus::before,.sec_bridge__header__link:hover::before{
 	width:100%
 }
 
-.o-hero__header__copy,.o-hero__header__copy p,.o-hero__header__headline,.o-hero__header__headline--larger,.o-hero__header__preheadline{
+.sec_bridge__header__copy,.sec_bridge__header__copy p,.sec_bridge__header__headline,.sec_bridge__header__headline--larger,.sec_bridge__header__preheadline{
 	color:inherit
 }
 
-.o-hero__header__headline,.o-hero__header__headline--larger{
+.sec_bridge__header__headline,.sec_bridge__header__headline--larger{
 	max-width:14em;
 	margin-top:0
 }
 
 @media screen and (min-width:48rem){
-	.o-hero__header__headline,.o-hero__header__headline--larger{
+	.sec_bridge__header__headline,.sec_bridge__header__headline--larger{
 		margin:0 auto 1.5rem
 	}
 }
 
-.o-hero__header__preheadline{
+.sec_bridge__header__preheadline{
 	margin-top:0;
 	margin-bottom:0
 }
 
-.o-hero__header__preheadline+.o-hero__header__headline,.o-hero__header__preheadline+.o-hero__header__headline--larger{
+.sec_bridge__header__preheadline+.sec_bridge__header__headline,.sec_bridge__header__preheadline+.sec_bridge__header__headline--larger{
 	margin-top:1rem
 }
 
-.o-hero__header__copy{
+.sec_bridge__header__copy{
 	color:#5b5e6d;
 	max-width:48rem;
 	margin-left:auto;
@@ -248,31 +174,31 @@ html{
 	margin-bottom:2rem
 }
 
-.o-hero__header__span{
+.sec_bridge__header__span{
 	display:inline
 }
 
 @media screen and (min-width:48rem){
-	.o-hero__header__span{
+	.sec_bridge__header__span{
 		display:block
 	}
 }
 
-.o-hero__header__cta{
+.sec_bridge__header__cta{
 	display:inline-block;
-	font-family:Slack-Averta,appleLogo,sans-serif
+	font-family:   'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;
 }
 
-.o-hero__header__link{
+.sec_bridge__header__link{
 	display:inline;
 	line-height:1.5
 }
 
-.o-hero__header>:last-child{
+.sec_bridge__header>:last-child{
 	margin-bottom:0
 }
 
-.o-hero__background{
+.sec_bridge__background{
 	z-index:-1;
 	position:absolute;
 	top:0;
@@ -281,13 +207,13 @@ html{
 	left:0
 }
 
-.o-hero__background.v--photo{
+.sec_bridge__background.v--photo{
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center top
 }
 
-.o-hero__background.v--screen:after{
+.sec_bridge__background.v--screen:after{
 	display:block;
 	content:"";
 	position:absolute;
@@ -299,27 +225,27 @@ html{
 }
 
 @media only print{
-	.o-hero,.o-hero.v--light-text,.o-hero.v--light-text .o-hero__header,.o-hero__header__copy{
+	.sec_bridge,.sec_bridge.v--light-text,.sec_bridge.v--light-text .sec_bridge__header,.sec_bridge__header__copy{
 		color:#323648!important
 	}
-	.o-hero,.o-hero--screen,.o-hero--slideshow{
+	.sec_bridge,.sec_bridge--screen,.sec_bridge--slideshow{
 		margin-top:0!important;
 		padding-top:1rem!important;
 		padding-bottom:1rem!important
 	}
-	.o-hero__background{
+	.sec_bridge__background{
 		background:0 0!important
 	}
-	.o-hero__illustration{
-		max-height:400px!important
+	.sec_bridge__illustration{
+		max-height:400px!important;
 	}
-	.o-hero__header__cta{
+	.sec_bridge__header__cta{
 		margin-left:auto;margin-right:auto
 	}
 }
 
 @media screen and (min-width:64rem){
-	.o-hero__header__link{
+	.sec_bridge__header__link{
 		font-size:1.25rem
 	}
 	.o-section__illustration{
@@ -486,7 +412,7 @@ html{
 	cursor:pointer;
 	border-radius:4px;
 	text-align:center;
-	font-family:Slack-Averta,appleLogo,sans-serif;
+	font-family:'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;;
 	font-weight:700;
 	line-height:1.3;
 	font-size:.9rem;
@@ -500,7 +426,7 @@ html{
 }
 
 [lang=ja-JP] .c-button{
-	font-family:Slack-Noto,Slack-Averta,appleLogo,sans-serif
+	font-family:'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;
 }
 
 @media screen and (min-width:25rem){
@@ -780,7 +706,7 @@ a.c-button:hover{
 }
 
 [lang=ja-JP] .c-cta--signup__headline{
-	font-family:Slack-Noto,Slack-Averta,appleLogo,sans-serif
+	font-family:    'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;
 }
 
 @media screen and (min-width:25rem){
@@ -976,7 +902,7 @@ a.c-button:hover{
 
 .c-nav--footer__listitem--meta a,
 .c-nav--footer__listitem--social a{
-	font-family:Slack-Averta,appleLogo,sans-serif;
+	font-family:   'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;;
 	font-weight:700;
 	line-height:1.2;
 	font-size:1rem;
@@ -987,7 +913,7 @@ a.c-button:hover{
 
 [lang=ja-JP] .c-nav--footer__listitem--meta a,
 [lang=ja-JP] .c-nav--footer__listitem--social a{
-	font-family:Slack-Noto,Slack-Averta,appleLogo,sans-serif
+	font-family:    'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;
 }
 
 @media screen and (min-width:25rem){
@@ -1250,7 +1176,7 @@ a.c-button:hover{
 }
 
 .c-nav--primary__listitem{
-	font-family:Slack-Averta,appleLogo,sans-serif;
+	font-family:   'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;;
 	font-weight:400;
 	font-size:1rem;
 	display:inline-block;
@@ -1259,7 +1185,7 @@ a.c-button:hover{
 }
 
 [lang=ja-JP] .c-nav--primary__listitem{
-	font-family:Slack-Noto,Slack-Averta,appleLogo,sans-serif
+	font-family:    'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;
 }
 
 @media screen and (min-width:25rem){

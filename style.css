@@ -107,7 +107,7 @@ h1,h2,h3,h4,h5{
 p{
 	margin:0;
 	margin-bottom:1rem;
-	color:#5b5e6d
+	color:#5b5b5b
 }
 
 ul{
@@ -132,6 +132,19 @@ li>ol{
 	margin:0 auto;
 	padding:0 8vw
 }
+
+.sec_bridge{
+	padding-top:7rem;
+	padding-bottom:3rem;
+	position:relative
+}
+
+.sec_bridge__illustration{
+	margin-top:3rem;
+	position: relative;
+	top: -2em;
+}
+
 
 @media screen and (min-width:25rem){
 	h1{
@@ -160,6 +173,10 @@ li>ol{
 @media screen and (min-width:48rem){
 	.body-container{
 		padding:0 4vw
+	}
+	.sec_bridge{
+		padding-top:10rem;
+		padding-bottom:5rem
 	}
 }
 
