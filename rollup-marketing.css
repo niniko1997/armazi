@@ -6,6 +6,15 @@ html{
 
 .sec_bridge__header{
 	color:#393939;
+	position: relative;
+	align-items: center;
+	object-position: center;
+	text-align: center;
+	justify-content:center
+}
+
+.second--why{
+	background: #FFF;
 }
 
 .sec_bridge__header__preheadline{
@@ -84,7 +93,7 @@ html{
 }
 
 .sec_bridge__header__copy{
-	font-family:   'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;;
+	font-family:'Arimo', 'Nunito', 'PT Sans Caption', sans-serif;;
 	font-weight:400;
 	line-height:1.5;
 	font-size:1.0625rem
@@ -322,16 +331,27 @@ html{
 .o-two-columns.v--inverse>:last-child{
 	margin-left:0
 }
+.o-two-columns.v--noninverse>:last-child{
+	margin-left:0
+}
 
 @media screen and (min-width:64rem){
 	.o-modal__close{
 		font-size:.875rem
 		}
-		.o-two-columns.v--inverse>:last-child{
+	.o-two-columns.v--inverse>:last-child{
 			margin-right:10.97560976%;
 			flex-basis:40.24390244%
-		}
+	}
 	.o-two-columns.v--inverse>:first-child{
+		order:2;
+		flex-basis:48.7804878%
+	}
+	.o-two-columns.v--noninverse>:last-child{
+			margin-right:10.97560976%;
+			flex-basis:40.24390244%
+	}
+	.o-two-columns.v--noninverse>:first-child{
 		order:2;
 		flex-basis:48.7804878%
 	}
@@ -342,6 +362,12 @@ html{
 		max-width:40.24390244%
 	}
 	.o-two-columns.v--inverse>:first-child{
+		max-width:48.7804878%
+	}
+	.o-two-columns.v--noninverse>:last-child{
+		max-width:40.24390244%
+	}
+	.o-two-columns.v--noninverse>:first-child{
 		max-width:48.7804878%
 	}
 }
@@ -377,6 +403,12 @@ html{
 			grid-template-columns:40.24390244% 48.7804878%
 		}
 		.o-two-columns.v--inverse>:last-child{
+			margin:0
+		}
+		.o-two-columns.v--noninverse{
+			grid-template-columns:40.24390244% 48.7804878%
+		}
+		.o-two-columns.v--noninverse>:last-child{
 			margin:0
 		}
 	}

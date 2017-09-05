@@ -145,7 +145,6 @@ li>ol{
 	top: -2em;
 }
 
-
 @media screen and (min-width:25rem){
 	h1{
 		font-size:calc(2rem + (12 * (100vw - 400px)/ 624))
